@@ -1,0 +1,391 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          crud\impl\EmployeeImpl.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package crud.impl
+</span>2 <span style=''>import crud.main.Main.departmentService.getDepartmentById
+</span>3 <span style=''>import crud.models.{Department, Employee}
+</span>4 <span style=''>import crud.repository.{DepartmentRepository, EmployeeRepository}
+</span>5 <span style=''>
+</span>6 <span style=''>class EmployeeImpl extends EmployeeRepository {
+</span>7 <span style=''>  private val initialEmployees: List[Employee] = </span><span style='background: #F0ADAD'>List(
+</span>8 <span style=''></span><span style='background: #F0ADAD'>    Employee(1, &quot;Leela&quot;, 11),
+</span>9 <span style=''></span><span style='background: #F0ADAD'>    Employee(2, &quot;Arya&quot;, 12),
+</span>10 <span style=''></span><span style='background: #F0ADAD'>    Employee(3, &quot;Rohan&quot;,13),
+</span>11 <span style=''></span><span style='background: #F0ADAD'>    Employee(4, &quot;Shruti&quot;, 11),
+</span>12 <span style=''></span><span style='background: #F0ADAD'>    Employee(5, &quot;Nagarjuna&quot;, 14)
+</span>13 <span style=''></span><span style='background: #F0ADAD'>  )</span><span style=''>
+</span>14 <span style=''>
+</span>15 <span style=''>  private var employees: List[Employee] = </span><span style='background: #F0ADAD'>initialEmployees</span><span style=''>
+</span>16 <span style=''>
+</span>17 <span style=''>  def getAllEmployees(): List[Employee] = </span><span style='background: #F0ADAD'>employees</span><span style=''>
+</span>18 <span style=''>
+</span>19 <span style=''>  def getEmployeeById(id: Int): Option[Employee]= </span><span style='background: #F0ADAD'>employees.find(_.id == id)</span><span style=''>
+</span>20 <span style=''>
+</span>21 <span style=''>  def addEmployee(employee: Employee): List[Employee] = </span><span style='background: #F0ADAD'>employees :+ employee</span><span style=''>
+</span>22 <span style=''>
+</span>23 <span style=''>  def updateEmployee(id: Int, updatedEmployee: Employee): List[Employee] = {
+</span>24 <span style=''>    </span><span style='background: #F0ADAD'>employees.map {
+</span>25 <span style=''></span><span style='background: #F0ADAD'>      case e if e.id == id =&gt; updatedEmployee
+</span>26 <span style=''></span><span style='background: #F0ADAD'>      case e =&gt; e
+</span>27 <span style=''></span><span style='background: #F0ADAD'>    }</span><span style=''>
+</span>28 <span style=''>  }
+</span>29 <span style=''>
+</span>30 <span style=''>  def deleteEmployee(id: Int): List[Employee] = </span><span style='background: #F0ADAD'>employees.filterNot(_.id == id)</span><span style=''>
+</span>31 <span style=''>
+</span>32 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          7
+        </td>
+        <td>
+          20
+        </td>
+        <td>
+          288
+          -
+          455
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.IterableFactory.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.`package`.List.apply[crud.models.Employee](crud.models.Employee.apply(1, &quot;Leela&quot;, 11), crud.models.Employee.apply(2, &quot;Arya&quot;, 12), crud.models.Employee.apply(3, &quot;Rohan&quot;, 13), crud.models.Employee.apply(4, &quot;Shruti&quot;, 11), crud.models.Employee.apply(5, &quot;Nagarjuna&quot;, 14))
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          15
+        </td>
+        <td>
+          299
+          -
+          323
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.models.Employee.apply
+        </td>
+        <td style="background: #F0ADAD">
+          crud.models.Employee.apply(1, &quot;Leela&quot;, 11)
+        </td>
+      </tr><tr>
+        <td>
+          9
+        </td>
+        <td>
+          16
+        </td>
+        <td>
+          330
+          -
+          353
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.models.Employee.apply
+        </td>
+        <td style="background: #F0ADAD">
+          crud.models.Employee.apply(2, &quot;Arya&quot;, 12)
+        </td>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          17
+        </td>
+        <td>
+          360
+          -
+          383
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.models.Employee.apply
+        </td>
+        <td style="background: #F0ADAD">
+          crud.models.Employee.apply(3, &quot;Rohan&quot;, 13)
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          18
+        </td>
+        <td>
+          390
+          -
+          415
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.models.Employee.apply
+        </td>
+        <td style="background: #F0ADAD">
+          crud.models.Employee.apply(4, &quot;Shruti&quot;, 11)
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          19
+        </td>
+        <td>
+          422
+          -
+          450
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.models.Employee.apply
+        </td>
+        <td style="background: #F0ADAD">
+          crud.models.Employee.apply(5, &quot;Nagarjuna&quot;, 14)
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          21
+        </td>
+        <td>
+          501
+          -
+          517
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          crud.impl.EmployeeImpl.initialEmployees
+        </td>
+        <td style="background: #F0ADAD">
+          EmployeeImpl.this.initialEmployees
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          22
+        </td>
+        <td>
+          563
+          -
+          572
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          crud.impl.EmployeeImpl.employees
+        </td>
+        <td style="background: #F0ADAD">
+          EmployeeImpl.this.employees
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          23
+        </td>
+        <td>
+          641
+          -
+          651
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.==
+        </td>
+        <td style="background: #F0ADAD">
+          x$1.id.==(id)
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          24
+        </td>
+        <td>
+          626
+          -
+          652
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.find
+        </td>
+        <td style="background: #F0ADAD">
+          EmployeeImpl.this.employees.find(((x$1: crud.models.Employee) =&gt; x$1.id.==(id)))
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          25
+        </td>
+        <td>
+          712
+          -
+          733
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.SeqOps.:+
+        </td>
+        <td style="background: #F0ADAD">
+          EmployeeImpl.this.employees.:+[crud.models.Employee](employee)
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          27
+        </td>
+        <td>
+          819
+          -
+          907
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.map
+        </td>
+        <td style="background: #F0ADAD">
+          EmployeeImpl.this.employees.map[crud.models.Employee](((x0$1: crud.models.Employee) =&gt; x0$1 match {
+  case (e @ _) if e.id.==(id) =&gt; updatedEmployee
+  case (e @ _) =&gt; e
+}))
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          26
+        </td>
+        <td>
+          852
+          -
+          862
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.==
+        </td>
+        <td style="background: #F0ADAD">
+          e.id.==(id)
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          29
+        </td>
+        <td>
+          964
+          -
+          995
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.filterNot
+        </td>
+        <td style="background: #F0ADAD">
+          EmployeeImpl.this.employees.filterNot(((x$2: crud.models.Employee) =&gt; x$2.id.==(id)))
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          28
+        </td>
+        <td>
+          984
+          -
+          994
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.==
+        </td>
+        <td style="background: #F0ADAD">
+          x$2.id.==(id)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

@@ -1,0 +1,369 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          crud\impl\DepartmentImpl.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package crud.impl
+</span>2 <span style=''>
+</span>3 <span style=''>import crud.models.Department
+</span>4 <span style=''>import crud.repository.DepartmentRepository
+</span>5 <span style=''>
+</span>6 <span style=''>class DepartmentImpl extends DepartmentRepository {
+</span>7 <span style=''>
+</span>8 <span style=''>  private val initialDepartments: List[Department] = </span><span style='background: #F0ADAD'>List(
+</span>9 <span style=''></span><span style='background: #F0ADAD'>    Department(11,&quot;Finance&quot;),
+</span>10 <span style=''></span><span style='background: #F0ADAD'>    Department(12,&quot;IT&quot;),
+</span>11 <span style=''></span><span style='background: #F0ADAD'>    Department(13,&quot;QA&quot;),
+</span>12 <span style=''></span><span style='background: #F0ADAD'>    Department(14,&quot;ERnD&quot;)
+</span>13 <span style=''></span><span style='background: #F0ADAD'>  )</span><span style=''>
+</span>14 <span style=''>
+</span>15 <span style=''>  private var departments: List[Department] = </span><span style='background: #F0ADAD'>initialDepartments</span><span style=''>
+</span>16 <span style=''>
+</span>17 <span style=''>  def getAllDepartments(): List[Department] = </span><span style='background: #F0ADAD'>departments</span><span style=''>
+</span>18 <span style=''>
+</span>19 <span style=''>  def getDepartmentById(id: Int): Option[Department] = </span><span style='background: #F0ADAD'>departments.find(_.id == id)</span><span style=''>
+</span>20 <span style=''>
+</span>21 <span style=''>  def addDepartment(department: Department): List[Department] =  </span><span style='background: #F0ADAD'>departments :+ department</span><span style=''>
+</span>22 <span style=''>
+</span>23 <span style=''>  def updateDepartment(id: Int, updatedDepartment: Department): List[Department] = {
+</span>24 <span style=''>    </span><span style='background: #F0ADAD'>departments.map {
+</span>25 <span style=''></span><span style='background: #F0ADAD'>      case d if d.id == id =&gt; updatedDepartment
+</span>26 <span style=''></span><span style='background: #F0ADAD'>      case d =&gt; d
+</span>27 <span style=''></span><span style='background: #F0ADAD'>    }</span><span style=''>
+</span>28 <span style=''>  }
+</span>29 <span style=''>
+</span>30 <span style=''>  def deleteDepartment(id: Int): List[Department] = </span><span style='background: #F0ADAD'>departments.filterNot(_.id == id)</span><span style=''>
+</span>31 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          5
+        </td>
+        <td>
+          207
+          -
+          327
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.IterableFactory.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.`package`.List.apply[crud.models.Department](crud.models.Department.apply(11, &quot;Finance&quot;), crud.models.Department.apply(12, &quot;IT&quot;), crud.models.Department.apply(13, &quot;QA&quot;), crud.models.Department.apply(14, &quot;ERnD&quot;))
+        </td>
+      </tr><tr>
+        <td>
+          9
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          218
+          -
+          242
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.models.Department.apply
+        </td>
+        <td style="background: #F0ADAD">
+          crud.models.Department.apply(11, &quot;Finance&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          2
+        </td>
+        <td>
+          249
+          -
+          268
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.models.Department.apply
+        </td>
+        <td style="background: #F0ADAD">
+          crud.models.Department.apply(12, &quot;IT&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          3
+        </td>
+        <td>
+          275
+          -
+          294
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.models.Department.apply
+        </td>
+        <td style="background: #F0ADAD">
+          crud.models.Department.apply(13, &quot;QA&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          4
+        </td>
+        <td>
+          301
+          -
+          322
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.models.Department.apply
+        </td>
+        <td style="background: #F0ADAD">
+          crud.models.Department.apply(14, &quot;ERnD&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          6
+        </td>
+        <td>
+          377
+          -
+          395
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          crud.impl.DepartmentImpl.initialDepartments
+        </td>
+        <td style="background: #F0ADAD">
+          DepartmentImpl.this.initialDepartments
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          445
+          -
+          456
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          crud.impl.DepartmentImpl.departments
+        </td>
+        <td style="background: #F0ADAD">
+          DepartmentImpl.this.departments
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          8
+        </td>
+        <td>
+          532
+          -
+          542
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.==
+        </td>
+        <td style="background: #F0ADAD">
+          x$1.id.==(id)
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          9
+        </td>
+        <td>
+          515
+          -
+          543
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.find
+        </td>
+        <td style="background: #F0ADAD">
+          DepartmentImpl.this.departments.find(((x$1: crud.models.Department) =&gt; x$1.id.==(id)))
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          10
+        </td>
+        <td>
+          612
+          -
+          637
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.SeqOps.:+
+        </td>
+        <td style="background: #F0ADAD">
+          DepartmentImpl.this.departments.:+[crud.models.Department](department)
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          12
+        </td>
+        <td>
+          731
+          -
+          823
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.map
+        </td>
+        <td style="background: #F0ADAD">
+          DepartmentImpl.this.departments.map[crud.models.Department](((x0$1: crud.models.Department) =&gt; x0$1 match {
+  case (d @ _) if d.id.==(id) =&gt; updatedDepartment
+  case (d @ _) =&gt; d
+}))
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          11
+        </td>
+        <td>
+          766
+          -
+          776
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.==
+        </td>
+        <td style="background: #F0ADAD">
+          d.id.==(id)
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          14
+        </td>
+        <td>
+          884
+          -
+          917
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.filterNot
+        </td>
+        <td style="background: #F0ADAD">
+          DepartmentImpl.this.departments.filterNot(((x$2: crud.models.Department) =&gt; x$2.id.==(id)))
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          13
+        </td>
+        <td>
+          906
+          -
+          916
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.==
+        </td>
+        <td style="background: #F0ADAD">
+          x$2.id.==(id)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

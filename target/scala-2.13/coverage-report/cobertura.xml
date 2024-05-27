@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage 
+line-rate="0.17" lines-valid="60" lines-covered="10" branches-valid="0" branches-covered="0" branch-rate="1.00" complexity="0" version="1.0" timestamp="1707734579042">
+    <sources>
+        <source>--source</source>
+        <source>C:/Users/m158/IdeaProjects/CRUD/src/main/scala</source>
+    </sources>
+    <packages>
+        <package name="crud.impl" line-rate="0.00" branch-rate="0.00" complexity="0">
+            <classes>
+                <class 
+                name="crud.impl.EmployeeImpl" filename="crud/impl/EmployeeImpl.scala" line-rate="0.00" branch-rate="0.00" complexity="0">
+                    <methods>
+                        <method 
+                        name="crud.impl/EmployeeImpl/getAllEmployees" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="17" hits="0" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.impl/EmployeeImpl/deleteEmployee" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="30" hits="0" branch="false"/>
+                                <line number="30" hits="0" branch="false"/>
+                            </lines>
+</method>
+                        <method name="crud.impl/EmployeeImpl/&lt;none&gt;" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="10" hits="0" branch="false"/>
+                                <line number="7" hits="0" branch="false"/>
+                                <line number="9" hits="0" branch="false"/>
+                                <line number="12" hits="0" branch="false"/>
+                                <line number="11" hits="0" branch="false"/>
+                                <line number="15" hits="0" branch="false"/>
+                                <line number="8" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method 
+                        name="crud.impl/EmployeeImpl/updateEmployee" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="25" hits="0" branch="false"/>
+                                <line number="24" hits="0" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.impl/EmployeeImpl/getEmployeeById" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="19" hits="0" branch="false"/>
+                                <line number="19" hits="0" branch="false"/>
+                            </lines>
+</method>
+                        <method name="crud.impl/EmployeeImpl/addEmployee" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="21" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="19" hits="0" branch="false"/>
+                        <line number="10" hits="0" branch="false"/>
+                        <line number="25" hits="0" branch="false"/>
+                        <line number="30" hits="0" branch="false"/>
+                        <line number="7" hits="0" branch="false"/>
+                        <line number="17" hits="0" branch="false"/>
+                        <line number="9" hits="0" branch="false"/>
+                        <line number="21" hits="0" branch="false"/>
+                        <line number="12" hits="0" branch="false"/>
+                        <line number="30" hits="0" branch="false"/>
+                        <line number="24" hits="0" branch="false"/>
+                        <line number="11" hits="0" branch="false"/>
+                        <line number="15" hits="0" branch="false"/>
+                        <line number="8" hits="0" branch="false"/>
+                        <line number="19" hits="0" branch="false"/>
+                    </lines>
+</class>
+                <class 
+                name="crud.impl.DepartmentImpl" filename="crud/impl/DepartmentImpl.scala" line-rate="0.00" branch-rate="0.00" complexity="0">
+                    <methods>
+                        <method 
+                        name="crud.impl/DepartmentImpl/deleteDepartment" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="30" hits="0" branch="false"/>
+                                <line number="30" hits="0" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.impl/DepartmentImpl/&lt;none&gt;" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="10" hits="0" branch="false"/>
+                                <line number="8" hits="0" branch="false"/>
+                                <line number="12" hits="0" branch="false"/>
+                                <line number="9" hits="0" branch="false"/>
+                                <line number="11" hits="0" branch="false"/>
+                                <line number="15" hits="0" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.impl/DepartmentImpl/getAllDepartments" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="17" hits="0" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.impl/DepartmentImpl/getDepartmentById" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="19" hits="0" branch="false"/>
+                                <line number="19" hits="0" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.impl/DepartmentImpl/addDepartment" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="21" hits="0" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.impl/DepartmentImpl/updateDepartment" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="25" hits="0" branch="false"/>
+                                <line number="24" hits="0" branch="false"/>
+                            </lines>
+</method>
+                    </methods>
+                    <lines>
+                        <line number="19" hits="0" branch="false"/>
+                        <line number="25" hits="0" branch="false"/>
+                        <line number="10" hits="0" branch="false"/>
+                        <line number="8" hits="0" branch="false"/>
+                        <line number="30" hits="0" branch="false"/>
+                        <line number="12" hits="0" branch="false"/>
+                        <line number="30" hits="0" branch="false"/>
+                        <line number="17" hits="0" branch="false"/>
+                        <line number="21" hits="0" branch="false"/>
+                        <line number="9" hits="0" branch="false"/>
+                        <line number="19" hits="0" branch="false"/>
+                        <line number="11" hits="0" branch="false"/>
+                        <line number="24" hits="0" branch="false"/>
+                        <line number="15" hits="0" branch="false"/>
+                    </lines>
+</class>
+            </classes>
+        </package>
+        <package name="crud.main" line-rate="0.00" branch-rate="0.00" complexity="0">
+            <classes>
+                <class name="crud.main.Main" filename="crud/main/Main.scala" line-rate="0.00" branch-rate="0.00" complexity="0">
+                    <methods>
+                        <method name="crud.main/Main/&lt;none&gt;" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="34" hits="0" branch="false"/>
+                                <line number="14" hits="0" branch="false"/>
+                                <line number="24" hits="0" branch="false"/>
+                                <line number="15" hits="0" branch="false"/>
+                                <line number="25" hits="0" branch="false"/>
+                                <line number="21" hits="0" branch="false"/>
+                                <line number="30" hits="0" branch="false"/>
+                                <line number="28" hits="0" branch="false"/>
+                                <line number="22" hits="0" branch="false"/>
+                                <line number="33" hits="0" branch="false"/>
+                                <line number="11" hits="0" branch="false"/>
+                                <line number="24" hits="0" branch="false"/>
+                                <line number="15" hits="0" branch="false"/>
+                                <line number="19" hits="0" branch="false"/>
+                                <line number="27" hits="0" branch="false"/>
+                                <line number="18" hits="0" branch="false"/>
+                                <line number="31" hits="0" branch="false"/>
+                                <line number="10" hits="0" branch="false"/>
+                                <line number="21" hits="0" branch="false"/>
+                                <line number="24" hits="0" branch="false"/>
+                                <line number="14" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="34" hits="0" branch="false"/>
+                        <line number="14" hits="0" branch="false"/>
+                        <line number="24" hits="0" branch="false"/>
+                        <line number="15" hits="0" branch="false"/>
+                        <line number="25" hits="0" branch="false"/>
+                        <line number="21" hits="0" branch="false"/>
+                        <line number="30" hits="0" branch="false"/>
+                        <line number="28" hits="0" branch="false"/>
+                        <line number="22" hits="0" branch="false"/>
+                        <line number="33" hits="0" branch="false"/>
+                        <line number="11" hits="0" branch="false"/>
+                        <line number="24" hits="0" branch="false"/>
+                        <line number="15" hits="0" branch="false"/>
+                        <line number="19" hits="0" branch="false"/>
+                        <line number="27" hits="0" branch="false"/>
+                        <line number="18" hits="0" branch="false"/>
+                        <line number="31" hits="0" branch="false"/>
+                        <line number="10" hits="0" branch="false"/>
+                        <line number="21" hits="0" branch="false"/>
+                        <line number="24" hits="0" branch="false"/>
+                        <line number="14" hits="0" branch="false"/>
+                    </lines>
+                </class>
+            </classes>
+        </package>
+        <package name="crud.services" line-rate="1.00" branch-rate="1.00" complexity="0">
+            <classes>
+                <class 
+                name="crud.services.EmployeeServices" filename="crud/services/EmployeeServices.scala" line-rate="1.00" branch-rate="1.00" complexity="0">
+                    <methods>
+                        <method 
+                        name="crud.services/EmployeeServices/addEmployee" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="10" hits="1" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.services/EmployeeServices/getAllEmployees" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="8" hits="1" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.services/EmployeeServices/getEmployeeById" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="9" hits="1" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.services/EmployeeServices/updateEmployee" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="11" hits="1" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.services/EmployeeServices/deleteEmployee" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="12" hits="1" branch="false"/>
+                            </lines>
+</method>
+                    </methods>
+                    <lines>
+                        <line number="11" hits="1" branch="false"/>
+                        <line number="8" hits="1" branch="false"/>
+                        <line number="10" hits="1" branch="false"/>
+                        <line number="12" hits="1" branch="false"/>
+                        <line number="9" hits="1" branch="false"/>
+                    </lines>
+</class>
+                <class 
+                name="crud.services.DepartmentService" filename="crud/services/DepartmentService.scala" line-rate="1.00" branch-rate="1.00" complexity="0">
+                    <methods>
+                        <method 
+                        name="crud.services/DepartmentService/addDepartment" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="10" hits="1" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.services/DepartmentService/getAllDepartments" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="8" hits="1" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.services/DepartmentService/updateDepartment" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="11" hits="1" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.services/DepartmentService/deleteDepartment" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="12" hits="1" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="crud.services/DepartmentService/getDepartmentById" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="9" hits="1" branch="false"/>
+                            </lines>
+</method>
+                    </methods>
+                    <lines>
+                        <line number="10" hits="1" branch="false"/>
+                        <line number="12" hits="1" branch="false"/>
+                        <line number="9" hits="1" branch="false"/>
+                        <line number="11" hits="1" branch="false"/>
+                        <line number="8" hits="1" branch="false"/>
+                    </lines>
+</class>
+            </classes>
+        </package>
+    </packages>
+</coverage>

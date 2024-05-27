@@ -1,0 +1,337 @@
+<scoverage 
+statement-count="60" statements-invoked="10" statement-rate="16.67" branch-rate="100.00" version="1.0" timestamp="1707734579125">
+    <packages>
+        <package name="crud.impl" statement-count="29" statements-invoked="0" statement-rate="0.00">
+            <classes>
+                <class 
+                name="crud.impl.EmployeeImpl" filename="crud\impl\EmployeeImpl.scala" statement-count="15" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method 
+                        name="crud.impl/EmployeeImpl/getAllEmployees" statement-count="1" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="getAllEmployees" start="563" end="572" line="17" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.impl/EmployeeImpl/deleteEmployee" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="deleteEmployee" start="964" end="995" line="30" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="deleteEmployee" start="984" end="994" line="30" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.impl/EmployeeImpl/&lt;none&gt;" statement-count="7" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="&lt;none&gt;" start="360" end="383" line="10" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="&lt;none&gt;" start="288" end="455" line="7" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="&lt;none&gt;" start="330" end="353" line="9" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="&lt;none&gt;" start="422" end="450" line="12" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="&lt;none&gt;" start="390" end="415" line="11" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="&lt;none&gt;" start="501" end="517" line="15" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="&lt;none&gt;" start="299" end="323" line="8" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.impl/EmployeeImpl/updateEmployee" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="updateEmployee" start="852" end="862" line="25" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="updateEmployee" start="819" end="907" line="24" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.impl/EmployeeImpl/getEmployeeById" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="getEmployeeById" start="641" end="651" line="19" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="getEmployeeById" start="626" end="652" line="19" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.impl/EmployeeImpl/addEmployee" statement-count="1" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="crud.impl" class="EmployeeImpl" class-type="Class" full-class-name="crud.impl.EmployeeImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala" method="addEmployee" start="712" end="733" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="crud.impl.DepartmentImpl" filename="crud\impl\DepartmentImpl.scala" statement-count="14" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method 
+                        name="crud.impl/DepartmentImpl/deleteDepartment" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="deleteDepartment" start="884" end="917" line="30" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="deleteDepartment" start="906" end="916" line="30" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.impl/DepartmentImpl/&lt;none&gt;" statement-count="6" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="&lt;none&gt;" start="249" end="268" line="10" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="&lt;none&gt;" start="207" end="327" line="8" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="&lt;none&gt;" start="301" end="322" line="12" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="&lt;none&gt;" start="218" end="242" line="9" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="&lt;none&gt;" start="275" end="294" line="11" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="&lt;none&gt;" start="377" end="395" line="15" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.impl/DepartmentImpl/getAllDepartments" statement-count="1" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="getAllDepartments" start="445" end="456" line="17" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.impl/DepartmentImpl/getDepartmentById" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="getDepartmentById" start="532" end="542" line="19" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="getDepartmentById" start="515" end="543" line="19" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.impl/DepartmentImpl/addDepartment" statement-count="1" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="addDepartment" start="612" end="637" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.impl/DepartmentImpl/updateDepartment" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="updateDepartment" start="766" end="776" line="25" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.impl" class="DepartmentImpl" class-type="Class" full-class-name="crud.impl.DepartmentImpl" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala" method="updateDepartment" start="731" end="823" line="24" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="crud.main" statement-count="21" statements-invoked="0" statement-rate="0.00">
+            <classes>
+                <class 
+                name="crud.main.Main" filename="crud\main\Main.scala" statement-count="21" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method 
+                        name="crud.main/Main/&lt;none&gt;" statement-count="21" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="1315" end="1371" line="34" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="512" end="530" line="14" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="942" end="943" line="24" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="578" end="621" line="15" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="974" end="1023" line="25" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="801" end="830" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="1153" end="1190" line="30" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="1085" end="1126" line="28" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="835" end="878" line="22" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="1267" end="1311" line="33" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="373" end="391" line="11" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="906" end="970" line="24" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="600" end="620" line="15" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="706" end="749" line="19" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="1043" end="1081" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="669" end="702" line="18" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="1194" end="1241" line="31" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="304" end="320" line="10" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="773" end="831" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="946" end="969" line="24" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="crud.main" class="Main" class-type="Object" full-class-name="crud.main.Main" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala" method="&lt;none&gt;" start="491" end="531" line="14" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="crud.services" statement-count="10" statements-invoked="10" statement-rate="100.00">
+            <classes>
+                <class 
+                name="crud.services.EmployeeServices" filename="crud\services\EmployeeServices.scala" statement-count="5" statements-invoked="5" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="crud.services/EmployeeServices/addEmployee" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="crud.services" class="EmployeeServices" class-type="Class" full-class-name="crud.services.EmployeeServices" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\EmployeeServices.scala" method="addEmployee" start="440" end="480" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.services/EmployeeServices/getAllEmployees" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="crud.services" class="EmployeeServices" class-type="Class" full-class-name="crud.services.EmployeeServices" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\EmployeeServices.scala" method="getAllEmployees" start="255" end="291" line="8" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.services/EmployeeServices/getEmployeeById" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="crud.services" class="EmployeeServices" class-type="Class" full-class-name="crud.services.EmployeeServices" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\EmployeeServices.scala" method="getEmployeeById" start="344" end="382" line="9" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.services/EmployeeServices/updateEmployee" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="crud.services" class="EmployeeServices" class-type="Class" full-class-name="crud.services.EmployeeServices" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\EmployeeServices.scala" method="updateEmployee" start="549" end="596" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.services/EmployeeServices/deleteEmployee" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="crud.services" class="EmployeeServices" class-type="Class" full-class-name="crud.services.EmployeeServices" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\EmployeeServices.scala" method="deleteEmployee" start="646" end="683" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="crud.services.DepartmentService" filename="crud\services\DepartmentService.scala" statement-count="5" statements-invoked="5" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="crud.services/DepartmentService/addDepartment" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="crud.services" class="DepartmentService" class-type="Class" full-class-name="crud.services.DepartmentService" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\DepartmentService.scala" method="addDepartment" start="475" end="521" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.services/DepartmentService/getAllDepartments" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="crud.services" class="DepartmentService" class-type="Class" full-class-name="crud.services.DepartmentService" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\DepartmentService.scala" method="getAllDepartments" start="270" end="310" line="8" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.services/DepartmentService/updateDepartment" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="crud.services" class="DepartmentService" class-type="Class" full-class-name="crud.services.DepartmentService" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\DepartmentService.scala" method="updateDepartment" start="598" end="652" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.services/DepartmentService/deleteDepartment" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="crud.services" class="DepartmentService" class-type="Class" full-class-name="crud.services.DepartmentService" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\DepartmentService.scala" method="deleteDepartment" start="706" end="747" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="crud.services/DepartmentService/getDepartmentById" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="crud.services" class="DepartmentService" class-type="Class" full-class-name="crud.services.DepartmentService" source="C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\DepartmentService.scala" method="getDepartmentById" start="367" end="409" line="9" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+    </packages>
+</scoverage>

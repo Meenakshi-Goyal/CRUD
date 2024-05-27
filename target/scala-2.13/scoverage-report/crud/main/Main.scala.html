@@ -1,0 +1,519 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          crud\main\Main.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package crud.main
+</span>2 <span style=''>
+</span>3 <span style=''>import crud.impl.{DepartmentImpl, EmployeeImpl}
+</span>4 <span style=''>import crud.models.Employee
+</span>5 <span style=''>import crud.repository.{DepartmentRepository, EmployeeRepository}
+</span>6 <span style=''>import crud.services.{DepartmentService, EmployeeServices}
+</span>7 <span style=''>
+</span>8 <span style=''>object Main extends App {
+</span>9 <span style=''>
+</span>10 <span style=''>  val employeeRepository: EmployeeRepository = </span><span style='background: #F0ADAD'>new EmployeeImpl</span><span style=''>
+</span>11 <span style=''>  val departmentRepository: DepartmentRepository = </span><span style='background: #F0ADAD'>new DepartmentImpl</span><span style=''>
+</span>12 <span style=''>
+</span>13 <span style=''>  // Instantiate services with injected repositories
+</span>14 <span style=''>  val employeeService: EmployeeServices = </span><span style='background: #F0ADAD'>new EmployeeServices(employeeRepository)</span><span style=''>
+</span>15 <span style=''>  val departmentService: DepartmentService = </span><span style='background: #F0ADAD'>new DepartmentService(departmentRepository)</span><span style=''>
+</span>16 <span style=''>
+</span>17 <span style=''>  // Use the services
+</span>18 <span style=''>  val allEmployees = </span><span style='background: #F0ADAD'>employeeService.getAllEmployees()</span><span style=''>
+</span>19 <span style=''>  </span><span style='background: #F0ADAD'>println(s&quot;\n All employees: $allEmployees&quot;)</span><span style=''>
+</span>20 <span style=''>
+</span>21 <span style=''>  val newEmployee = </span><span style='background: #F0ADAD'>employeeService.addEmployee(Employee(6, &quot;NewEmloyee&quot;, 14))</span><span style=''>
+</span>22 <span style=''>  </span><span style='background: #F0ADAD'>println(s&quot;\n Added employee: $newEmployee&quot;)</span><span style=''>
+</span>23 <span style=''>
+</span>24 <span style=''>  val updatedEmployee = </span><span style='background: #F0ADAD'>employeeService.updateEmployee(id = 2 , Employee(2, &quot;Yash&quot;, 11))</span><span style=''>
+</span>25 <span style=''>  </span><span style='background: #F0ADAD'>println(s&quot;\n Updated employee: $updatedEmployee&quot;)</span><span style=''>
+</span>26 <span style=''>
+</span>27 <span style=''>  val deleted = </span><span style='background: #F0ADAD'>employeeService.deleteEmployee(id = 6)</span><span style=''>
+</span>28 <span style=''>  </span><span style='background: #F0ADAD'>println(s&quot;\n Employee deleted: $deleted&quot;)</span><span style=''>
+</span>29 <span style=''>
+</span>30 <span style=''>  val allDepartments = </span><span style='background: #F0ADAD'>departmentService.getAllDepartments()</span><span style=''>
+</span>31 <span style=''>  </span><span style='background: #F0ADAD'>println(s&quot;\n All departments: $allDepartments&quot;)</span><span style=''>
+</span>32 <span style=''>
+</span>33 <span style=''>  val getDepartById = </span><span style='background: #F0ADAD'>departmentService.getDepartmentById(id = 11)</span><span style=''>
+</span>34 <span style=''>  </span><span style='background: #F0ADAD'>println(s&quot;\n Department for this id is: $getDepartById&quot;)</span><span style=''>
+</span>35 <span style=''>
+</span>36 <span style=''>
+</span>37 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          30
+        </td>
+        <td>
+          304
+          -
+          320
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.impl.EmployeeImpl.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new crud.impl.EmployeeImpl()
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          31
+        </td>
+        <td>
+          373
+          -
+          391
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.impl.DepartmentImpl.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new crud.impl.DepartmentImpl()
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          32
+        </td>
+        <td>
+          512
+          -
+          530
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          crud.main.Main.employeeRepository
+        </td>
+        <td style="background: #F0ADAD">
+          Main.this.employeeRepository
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          33
+        </td>
+        <td>
+          491
+          -
+          531
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.services.EmployeeServices.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new crud.services.EmployeeServices(Main.this.employeeRepository)
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          35
+        </td>
+        <td>
+          578
+          -
+          621
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.services.DepartmentService.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new crud.services.DepartmentService(Main.this.departmentRepository)
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          34
+        </td>
+        <td>
+          600
+          -
+          620
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          crud.main.Main.departmentRepository
+        </td>
+        <td style="background: #F0ADAD">
+          Main.this.departmentRepository
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          36
+        </td>
+        <td>
+          669
+          -
+          702
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.services.EmployeeServices.getAllEmployees
+        </td>
+        <td style="background: #F0ADAD">
+          Main.this.employeeService.getAllEmployees()
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          37
+        </td>
+        <td>
+          706
+          -
+          749
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(&quot;\n All employees: &quot;.+(Main.this.allEmployees))
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          38
+        </td>
+        <td>
+          801
+          -
+          830
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.models.Employee.apply
+        </td>
+        <td style="background: #F0ADAD">
+          crud.models.Employee.apply(6, &quot;NewEmloyee&quot;, 14)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          39
+        </td>
+        <td>
+          773
+          -
+          831
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.services.EmployeeServices.addEmployee
+        </td>
+        <td style="background: #F0ADAD">
+          Main.this.employeeService.addEmployee(crud.models.Employee.apply(6, &quot;NewEmloyee&quot;, 14))
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          40
+        </td>
+        <td>
+          835
+          -
+          878
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(&quot;\n Added employee: &quot;.+(Main.this.newEmployee))
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          41
+        </td>
+        <td>
+          942
+          -
+          943
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          2
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          43
+        </td>
+        <td>
+          906
+          -
+          970
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.services.EmployeeServices.updateEmployee
+        </td>
+        <td style="background: #F0ADAD">
+          Main.this.employeeService.updateEmployee(2, crud.models.Employee.apply(2, &quot;Yash&quot;, 11))
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          42
+        </td>
+        <td>
+          946
+          -
+          969
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.models.Employee.apply
+        </td>
+        <td style="background: #F0ADAD">
+          crud.models.Employee.apply(2, &quot;Yash&quot;, 11)
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          44
+        </td>
+        <td>
+          974
+          -
+          1023
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(&quot;\n Updated employee: &quot;.+(Main.this.updatedEmployee))
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          45
+        </td>
+        <td>
+          1043
+          -
+          1081
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.services.EmployeeServices.deleteEmployee
+        </td>
+        <td style="background: #F0ADAD">
+          Main.this.employeeService.deleteEmployee(6)
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          46
+        </td>
+        <td>
+          1085
+          -
+          1126
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(&quot;\n Employee deleted: &quot;.+(Main.this.deleted))
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          47
+        </td>
+        <td>
+          1153
+          -
+          1190
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.services.DepartmentService.getAllDepartments
+        </td>
+        <td style="background: #F0ADAD">
+          Main.this.departmentService.getAllDepartments()
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          48
+        </td>
+        <td>
+          1194
+          -
+          1241
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(&quot;\n All departments: &quot;.+(Main.this.allDepartments))
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          49
+        </td>
+        <td>
+          1267
+          -
+          1311
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          crud.services.DepartmentService.getDepartmentById
+        </td>
+        <td style="background: #F0ADAD">
+          Main.this.departmentService.getDepartmentById(11)
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          50
+        </td>
+        <td>
+          1315
+          -
+          1371
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(&quot;\n Department for this id is: &quot;.+(Main.this.getDepartById))
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

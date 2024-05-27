@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="CRUD:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CRUD_jar</output-path>
+    <root id="root">
+      <element id="archive" name="CRUD.jar">
+        <element id="module-output" name="CRUD" />
+      </element>
+      <element id="library" level="project" name="sbt: org.scala-lang:scala-library:2.13.12:jar" />
+    </root>
+  </artifact>
+</component>

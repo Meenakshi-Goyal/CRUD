@@ -1,0 +1,42 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(DepartmentServiceSpec, org.scalatest.tools.Framework$$anon$1@41abccb9, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(EmployeeServiceSpec, org.scalatest.tools.Framework$$anon$1@41abccb9, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(EmployeeRepositorySpec, org.scalatest.tools.Framework$$anon$1@41abccb9, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(DepartmentRepositorySpec, org.scalatest.tools.Framework$$anon$1@41abccb9, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEmployeeRepositorySpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEmployeeRepository[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return all employees[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an employee by id[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add a new employee[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDepartmentRepositorySpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should update an employee by id[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDepartmentRepository[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should delete an employee by id[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return all departments[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a department by id[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add a new department[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should update a department by id[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should delete a department by id[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDepartmentServiceSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDepartment service[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add an department[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get an department by ID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should update department[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get all departments list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should delete an department by ID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEmployeeServiceSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEmployeeService[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add an employee[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get an employee by ID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should update an employee[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get all employees list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should delete an employee by ID[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 2 seconds, 748 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 20[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 4, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 20, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	EmployeeServiceSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DepartmentRepositorySpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DepartmentServiceSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	EmployeeRepositorySpec[0m

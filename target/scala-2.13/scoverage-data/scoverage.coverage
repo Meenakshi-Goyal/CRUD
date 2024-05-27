@@ -1,0 +1,1046 @@
+# Coverage data, format version: 2.0
+# Statement data:
+# - id
+# - source path
+# - package name
+# - class name
+# - class type (Class, Object or Trait)
+# - full class name
+# - method name
+# - start offset
+# - end offset
+# - line number
+# - symbol name
+# - tree name
+# - is branch
+# - invocations count
+# - is ignored
+# - description (can be multi-line)
+# '' sign
+# ------------------------------------------
+1
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+<none>
+218
+242
+9
+crud.models.Department.apply
+Apply
+false
+0
+false
+crud.models.Department.apply(11, "Finance")
+
+2
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+<none>
+249
+268
+10
+crud.models.Department.apply
+Apply
+false
+0
+false
+crud.models.Department.apply(12, "IT")
+
+3
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+<none>
+275
+294
+11
+crud.models.Department.apply
+Apply
+false
+0
+false
+crud.models.Department.apply(13, "QA")
+
+4
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+<none>
+301
+322
+12
+crud.models.Department.apply
+Apply
+false
+0
+false
+crud.models.Department.apply(14, "ERnD")
+
+5
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+<none>
+207
+327
+8
+scala.collection.IterableFactory.apply
+Apply
+false
+0
+false
+scala.`package`.List.apply[crud.models.Department](crud.models.Department.apply(11, "Finance"), crud.models.Department.apply(12, "IT"), crud.models.Department.apply(13, "QA"), crud.models.Department.apply(14, "ERnD"))
+
+6
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+<none>
+377
+395
+15
+crud.impl.DepartmentImpl.initialDepartments
+Select
+false
+0
+false
+DepartmentImpl.this.initialDepartments
+
+7
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+getAllDepartments
+445
+456
+17
+crud.impl.DepartmentImpl.departments
+Select
+false
+0
+false
+DepartmentImpl.this.departments
+
+8
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+getDepartmentById
+532
+542
+19
+scala.Int.==
+Apply
+false
+0
+false
+x$1.id.==(id)
+
+9
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+getDepartmentById
+515
+543
+19
+scala.collection.immutable.List.find
+Apply
+false
+0
+false
+DepartmentImpl.this.departments.find(((x$1: crud.models.Department) => x$1.id.==(id)))
+
+10
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+addDepartment
+612
+637
+21
+scala.collection.SeqOps.:+
+Apply
+false
+0
+false
+DepartmentImpl.this.departments.:+[crud.models.Department](department)
+
+11
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+updateDepartment
+766
+776
+25
+scala.Int.==
+Apply
+false
+0
+false
+d.id.==(id)
+
+12
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+updateDepartment
+731
+823
+24
+scala.collection.immutable.List.map
+Apply
+false
+0
+false
+DepartmentImpl.this.departments.map[crud.models.Department](((x0$1: crud.models.Department) => x0$1 match {
+  case (d @ _) if d.id.==(id) => updatedDepartment
+  case (d @ _) => d
+}))
+
+13
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+deleteDepartment
+906
+916
+30
+scala.Int.==
+Apply
+false
+0
+false
+x$2.id.==(id)
+
+14
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\DepartmentImpl.scala
+crud.impl
+DepartmentImpl
+Class
+crud.impl.DepartmentImpl
+deleteDepartment
+884
+917
+30
+scala.collection.immutable.List.filterNot
+Apply
+false
+0
+false
+DepartmentImpl.this.departments.filterNot(((x$2: crud.models.Department) => x$2.id.==(id)))
+
+15
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+<none>
+299
+323
+8
+crud.models.Employee.apply
+Apply
+false
+0
+false
+crud.models.Employee.apply(1, "Leela", 11)
+
+16
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+<none>
+330
+353
+9
+crud.models.Employee.apply
+Apply
+false
+0
+false
+crud.models.Employee.apply(2, "Arya", 12)
+
+17
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+<none>
+360
+383
+10
+crud.models.Employee.apply
+Apply
+false
+0
+false
+crud.models.Employee.apply(3, "Rohan", 13)
+
+18
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+<none>
+390
+415
+11
+crud.models.Employee.apply
+Apply
+false
+0
+false
+crud.models.Employee.apply(4, "Shruti", 11)
+
+19
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+<none>
+422
+450
+12
+crud.models.Employee.apply
+Apply
+false
+0
+false
+crud.models.Employee.apply(5, "Nagarjuna", 14)
+
+20
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+<none>
+288
+455
+7
+scala.collection.IterableFactory.apply
+Apply
+false
+0
+false
+scala.`package`.List.apply[crud.models.Employee](crud.models.Employee.apply(1, "Leela", 11), crud.models.Employee.apply(2, "Arya", 12), crud.models.Employee.apply(3, "Rohan", 13), crud.models.Employee.apply(4, "Shruti", 11), crud.models.Employee.apply(5, "Nagarjuna", 14))
+
+21
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+<none>
+501
+517
+15
+crud.impl.EmployeeImpl.initialEmployees
+Select
+false
+0
+false
+EmployeeImpl.this.initialEmployees
+
+22
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+getAllEmployees
+563
+572
+17
+crud.impl.EmployeeImpl.employees
+Select
+false
+0
+false
+EmployeeImpl.this.employees
+
+23
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+getEmployeeById
+641
+651
+19
+scala.Int.==
+Apply
+false
+0
+false
+x$1.id.==(id)
+
+24
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+getEmployeeById
+626
+652
+19
+scala.collection.immutable.List.find
+Apply
+false
+0
+false
+EmployeeImpl.this.employees.find(((x$1: crud.models.Employee) => x$1.id.==(id)))
+
+25
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+addEmployee
+712
+733
+21
+scala.collection.SeqOps.:+
+Apply
+false
+0
+false
+EmployeeImpl.this.employees.:+[crud.models.Employee](employee)
+
+26
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+updateEmployee
+852
+862
+25
+scala.Int.==
+Apply
+false
+0
+false
+e.id.==(id)
+
+27
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+updateEmployee
+819
+907
+24
+scala.collection.immutable.List.map
+Apply
+false
+0
+false
+EmployeeImpl.this.employees.map[crud.models.Employee](((x0$1: crud.models.Employee) => x0$1 match {
+  case (e @ _) if e.id.==(id) => updatedEmployee
+  case (e @ _) => e
+}))
+
+28
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+deleteEmployee
+984
+994
+30
+scala.Int.==
+Apply
+false
+0
+false
+x$2.id.==(id)
+
+29
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\impl\EmployeeImpl.scala
+crud.impl
+EmployeeImpl
+Class
+crud.impl.EmployeeImpl
+deleteEmployee
+964
+995
+30
+scala.collection.immutable.List.filterNot
+Apply
+false
+0
+false
+EmployeeImpl.this.employees.filterNot(((x$2: crud.models.Employee) => x$2.id.==(id)))
+
+30
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+304
+320
+10
+crud.impl.EmployeeImpl.<init>
+Apply
+false
+0
+false
+new crud.impl.EmployeeImpl()
+
+31
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+373
+391
+11
+crud.impl.DepartmentImpl.<init>
+Apply
+false
+0
+false
+new crud.impl.DepartmentImpl()
+
+32
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+512
+530
+14
+crud.main.Main.employeeRepository
+Select
+false
+0
+false
+Main.this.employeeRepository
+
+33
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+491
+531
+14
+crud.services.EmployeeServices.<init>
+Apply
+false
+0
+false
+new crud.services.EmployeeServices(Main.this.employeeRepository)
+
+34
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+600
+620
+15
+crud.main.Main.departmentRepository
+Select
+false
+0
+false
+Main.this.departmentRepository
+
+35
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+578
+621
+15
+crud.services.DepartmentService.<init>
+Apply
+false
+0
+false
+new crud.services.DepartmentService(Main.this.departmentRepository)
+
+36
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+669
+702
+18
+crud.services.EmployeeServices.getAllEmployees
+Apply
+false
+0
+false
+Main.this.employeeService.getAllEmployees()
+
+37
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+706
+749
+19
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println("\n All employees: ".+(Main.this.allEmployees))
+
+38
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+801
+830
+21
+crud.models.Employee.apply
+Apply
+false
+0
+false
+crud.models.Employee.apply(6, "NewEmloyee", 14)
+
+39
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+773
+831
+21
+crud.services.EmployeeServices.addEmployee
+Apply
+false
+0
+false
+Main.this.employeeService.addEmployee(crud.models.Employee.apply(6, "NewEmloyee", 14))
+
+40
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+835
+878
+22
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println("\n Added employee: ".+(Main.this.newEmployee))
+
+41
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+942
+943
+24
+<nosymbol>
+Literal
+false
+0
+false
+2
+
+42
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+946
+969
+24
+crud.models.Employee.apply
+Apply
+false
+0
+false
+crud.models.Employee.apply(2, "Yash", 11)
+
+43
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+906
+970
+24
+crud.services.EmployeeServices.updateEmployee
+Apply
+false
+0
+false
+Main.this.employeeService.updateEmployee(2, crud.models.Employee.apply(2, "Yash", 11))
+
+44
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+974
+1023
+25
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println("\n Updated employee: ".+(Main.this.updatedEmployee))
+
+45
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+1043
+1081
+27
+crud.services.EmployeeServices.deleteEmployee
+Apply
+false
+0
+false
+Main.this.employeeService.deleteEmployee(6)
+
+46
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+1085
+1126
+28
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println("\n Employee deleted: ".+(Main.this.deleted))
+
+47
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+1153
+1190
+30
+crud.services.DepartmentService.getAllDepartments
+Apply
+false
+0
+false
+Main.this.departmentService.getAllDepartments()
+
+48
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+1194
+1241
+31
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println("\n All departments: ".+(Main.this.allDepartments))
+
+49
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+1267
+1311
+33
+crud.services.DepartmentService.getDepartmentById
+Apply
+false
+0
+false
+Main.this.departmentService.getDepartmentById(11)
+
+50
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\main\Main.scala
+crud.main
+Main
+Object
+crud.main.Main
+<none>
+1315
+1371
+34
+scala.Predef.println
+Apply
+false
+0
+false
+scala.Predef.println("\n Department for this id is: ".+(Main.this.getDepartById))
+
+51
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\DepartmentService.scala
+crud.services
+DepartmentService
+Class
+crud.services.DepartmentService
+getAllDepartments
+270
+310
+8
+crud.repository.DepartmentRepository.getAllDepartments
+Apply
+false
+0
+false
+DepartmentService.this.departmentRepository.getAllDepartments()
+
+52
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\DepartmentService.scala
+crud.services
+DepartmentService
+Class
+crud.services.DepartmentService
+getDepartmentById
+367
+409
+9
+crud.repository.DepartmentRepository.getDepartmentById
+Apply
+false
+0
+false
+DepartmentService.this.departmentRepository.getDepartmentById(id)
+
+53
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\DepartmentService.scala
+crud.services
+DepartmentService
+Class
+crud.services.DepartmentService
+addDepartment
+475
+521
+10
+crud.repository.DepartmentRepository.addDepartment
+Apply
+false
+0
+false
+DepartmentService.this.departmentRepository.addDepartment(department)
+
+54
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\DepartmentService.scala
+crud.services
+DepartmentService
+Class
+crud.services.DepartmentService
+updateDepartment
+598
+652
+11
+crud.repository.DepartmentRepository.updateDepartment
+Apply
+false
+0
+false
+DepartmentService.this.departmentRepository.updateDepartment(id, department)
+
+55
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\DepartmentService.scala
+crud.services
+DepartmentService
+Class
+crud.services.DepartmentService
+deleteDepartment
+706
+747
+12
+crud.repository.DepartmentRepository.deleteDepartment
+Apply
+false
+0
+false
+DepartmentService.this.departmentRepository.deleteDepartment(id)
+
+56
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\EmployeeServices.scala
+crud.services
+EmployeeServices
+Class
+crud.services.EmployeeServices
+getAllEmployees
+255
+291
+8
+crud.repository.EmployeeRepository.getAllEmployees
+Apply
+false
+0
+false
+EmployeeServices.this.employeeRepository.getAllEmployees()
+
+57
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\EmployeeServices.scala
+crud.services
+EmployeeServices
+Class
+crud.services.EmployeeServices
+getEmployeeById
+344
+382
+9
+crud.repository.EmployeeRepository.getEmployeeById
+Apply
+false
+0
+false
+EmployeeServices.this.employeeRepository.getEmployeeById(id)
+
+58
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\EmployeeServices.scala
+crud.services
+EmployeeServices
+Class
+crud.services.EmployeeServices
+addEmployee
+440
+480
+10
+crud.repository.EmployeeRepository.addEmployee
+Apply
+false
+0
+false
+EmployeeServices.this.employeeRepository.addEmployee(employee)
+
+59
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\EmployeeServices.scala
+crud.services
+EmployeeServices
+Class
+crud.services.EmployeeServices
+updateEmployee
+549
+596
+11
+crud.repository.EmployeeRepository.updateEmployee
+Apply
+false
+0
+false
+EmployeeServices.this.employeeRepository.updateEmployee(id, employee)
+
+60
+C:\Users\m158\IdeaProjects\CRUD\src\main\scala\crud\services\EmployeeServices.scala
+crud.services
+EmployeeServices
+Class
+crud.services.EmployeeServices
+deleteEmployee
+646
+683
+12
+crud.repository.EmployeeRepository.deleteEmployee
+Apply
+false
+0
+false
+EmployeeServices.this.employeeRepository.deleteEmployee(id)
+
